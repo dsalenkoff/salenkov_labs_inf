@@ -1,8 +1,9 @@
 import math
 
-from laba3.graph import changeCoords, brushColor, polygon, \
+from graph import changeCoords, brushColor, polygon, \
     randColor, rectangle, changeFillColor, windowSize, \
-    canvasSize, onMouseClick, onTimer, run
+    canvasSize, onMouseClick, onTimer, run, penSize, polyline, \
+    moveObjectBy
 
 angle = 0
 
@@ -98,6 +99,6 @@ def rotateMarlin():
 
 marlin = draw_marlin()
 onTimer(rotateMarlin, 1)
-onTimer(changeColor, 50)
+onTimer(changeColor, 500)
 
 run()
