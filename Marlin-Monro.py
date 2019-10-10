@@ -95,6 +95,6 @@ def rotateMarlin():
 
 marlin = draw_marlin()
 onTimer(rotateMarlin, 1)
-onTimer(changeColor, 500)
+onTimer(changeColor, 50)
 
 run()
