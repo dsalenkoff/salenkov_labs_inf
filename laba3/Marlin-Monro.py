@@ -1,5 +1,8 @@
-from graph import *
 import math
+
+from laba3.graph import changeCoords, brushColor, polygon, \
+    randColor, rectangle, changeFillColor, windowSize, \
+    canvasSize, onMouseClick, onTimer, run
 
 angle = 0
 
@@ -79,14 +82,14 @@ def draw_marlin():
 
 def changeColor():
     global angle
-    for i in marlin:
-        changeFillColor(i, randColor())
+    for z in marlin:
+        changeFillColor(z, randColor())
 
 
 def rotateMarlin():
     global angle
-    for i in marlin:
-        moveObjectBy(i, 0.5 * math.cos(angle), 0.5 * math.sin(angle))
+    for s in marlin:
+        moveObjectBy(s, 0.5 * math.cos(angle), 0.5 * math.sin(angle))
     if angle <= 2 * math.pi:
         angle += 0.005
     else:
