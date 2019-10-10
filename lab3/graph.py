@@ -192,7 +192,7 @@ def penSize(c = -1):
     _penSize = c
   else:
     return _penSize
-#----------------------------------
+
 def brushColor(c = -1, g = -1, b = -1):
   global _brushColor
   if type(c) == tuple: c, g, b = c
