@@ -5,7 +5,7 @@ import math
 
 colors = ['#212638', '#072776', '#ba5a1a', '#fdb766', '#4b6700']
 
-N = 15
+N = 100
 
 x_pole = 1080
 y_pole = 720
